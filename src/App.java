@@ -34,10 +34,18 @@ public class App {
        System.out.print("Hur gammal är du? ");
        int ålder = tb.nextInt();
        if(ålder >= 18 || medlem){
-        System.out.print("Välkommen");
+        System.out.println("Välkommen");
        } else{
-        System.out.print("GITTA");
+        System.out.println("GITTA");
        }
 
+       tb.nextLine();
+    System.out.print("Användarnamn: ");
+    String user = tb.nextLine();
+    System.out.print("Lösenord: ");
+    String pass = tb.nextLine();
+    if(user.equals("root") && pass.equals("passwd")){
+        System.out.println("ur in");
     }
+}
 }
