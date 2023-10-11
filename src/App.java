@@ -25,12 +25,19 @@ public class App {
        boolean medlem = false;
        System.out.print("Är du medlem? Ja eller Nej. ");
        String svar = tb.nextLine();
+       tb.nextLine();
        if(svar.equalsIgnoreCase("Ja")){
         medlem = true;
        } else if(svar.equalsIgnoreCase("Nej")){
         medlem = false;
-       }c
-       
+       }
+       System.out.print("Hur gammal är du? ");
+       int ålder = tb.nextInt();
+       if(ålder >= 18 || medlem){
+        System.out.print("Välkommen");
+       } else{
+        System.out.print("GITTA");
+       }
 
     }
 }
