@@ -4,6 +4,8 @@ public class App {
        int tal2 = 20;
        if(tal2>tal1){
         System.out.println(tal2+" är större än "+tal1);
+       } else {
+        System.out.println(tal2+" är mindre än "+tal1);
        }
     }
 }
