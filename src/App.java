@@ -8,6 +8,7 @@ public class App {
        } else {
         System.out.println(tal2+" är mindre än "+tal1);
        }
+
        Scanner tb = new Scanner(System.in);
        System.out.println("Vad är klockan? ");
        int klockan = tb.nextInt();
@@ -17,8 +18,19 @@ public class App {
        else if(klockan==12){
         System.out.println("Dags att äta");
        }
-       else if(klockan>=24 && klockan<=6){
+       else if(klockan>=24 || klockan<=6){
         System.out.println("Dags att gå och lägga dig.");
        }
+
+       boolean medlem = false;
+       System.out.print("Är du medlem? Ja eller Nej. ");
+       String svar = tb.nextLine();
+       if(svar.equalsIgnoreCase("Ja")){
+        medlem = true;
+       } else if(svar.equalsIgnoreCase("Nej")){
+        medlem = false;
+       }c
+       
+
     }
 }
