@@ -47,5 +47,21 @@ public class App {
     if(user.equals("root") && pass.equals("passwd")){
         System.out.println("ur in");
     }
+
+    System.out.println("Vädermeny");
+    System.out.println("1. Temperatur");
+    System.out.println("2. Vind");
+    System.out.println("3. Luftfunktighet");
+    System.out.println("Ange val: ");
+    int val = tb.nextInt();
+    if(val== 1){
+        System.out.println("Det är 18 grader"); 
+    }
+    if(val== 2){
+        System.out.println("Vinden är 10 sekund-meter");
+    }
+    if(val== 3){
+        System.out.println("Det är 100% luftfuktighet");
+    }
 }
 }
